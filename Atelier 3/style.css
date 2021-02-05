@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color:hsl(210, 46%, 95%) ;
+}
+.container{
+    margin-left: 5vw;
+    margin-right: 5 vw;
+    margin-top:5vh ;
+    margin-top: 5vh;
+    max-width: 1440px;
+    width: 90vw;
+    height: 90vh;
+    display:grid;
+    gap: 15px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20Ppx;
+    grid-template-areas: 
+    "box1 box1 box2 box5"
+    "box3 box4 box4 box5";
+}
+.card-one{
+    background-color: hsl(263, 55%, 52%) ;
+    grid-area: box1;
+    border-radius: 15px;
+    color: white;
+    background-image:url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 390px;
+    
+}
+.card-two{
+background-color:hsl(217, 19%, 35%) ;
+grid-area: box2;
+border-radius: 15px;
+color:white;
+
+
+}
+.card-three{
+background-color: hsl(0, 0%, 100%);
+grid-area: box3;
+border-radius: 15px;
+color: hsl(0, 4%, 45%);
+
+}
+.card-four{
+background-color:hsl(219, 29%, 14%);
+border-radius: 15px;
+grid-area: box4;
+color: white;
+}
+.card-five{
+background-color: hsl(0, 0%, 100%);
+grid-area: box5;
+border-radius: 15px;
+color: hsl(0, 4%, 45%);
+
+}
+.profile{
+    display: flex;}
+.profile-name{
+    margin-top: 25px;
+    margin-left: 22px;
+ }
+    
+p{
+    
+    font-size: small;
+    margin-left: 35px;
+    padding: 10px;
+}
+
+
+img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+strong{
+    font-size: 20px;
+}
+/* h5{
+    color: hsl(0, 4%, 45%);
+} */
+
+@media(max-width: 500px){
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+   
+}
